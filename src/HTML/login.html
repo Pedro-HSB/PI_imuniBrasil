@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Imuni Brasil</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="../css/style.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap"
+    rel="stylesheet">
+
+<script>
+  if (sessionStorage.email == null && sessionStorage.nome == null) {
+  }
+  else {
+    window.location.href = "../HTML/profile.html"
+  }
+</script>
+
+</head>
+<header>
+  <nav class="navbar navbar-dark bg-primaryt navbar-expand-lg shadow-sm">
+    <div class="container-fluid">
+      <a class="navbar-brand sizeLogo espacoLeft" href="index.html"><img src="../imagens/logo_new2.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item espaco " id="btn_navbarV" onmouseout="normal()" onmousemove="moveV()">
+            <a class="nav-link active text-primary-emphasis" aria-current="page" href="vacinas.html">Vacinas</a>
+          </li>
+          <li class="nav-item espaco " id="btn_navbarCr" onmouseout="normal()" onmousemove="moveCr()">
+            <a class="nav-link active text-primary-emphasis" href="carterinha.html">Carteira </a>
+          </li>
+          <li class="nav-item espaco " id="btn_navbarCm" onmouseout="normal()" onmousemove="moveCm()">
+            <a class="nav-link active text-primary-emphasis" href="campanhas.html">Campanhas </a>
+          </li>
+          <li class="nav-item espaco " id="btn_navbarCa" onmouseout="normal()" onmousemove="moveCa()">
+            <a class="nav-link active text-primary-emphasis" name="profile" href="login.html">Login/Cadastro</a>
+
+            <!-- <a href="" name="meulink">Testando alteração</a> -->
+          </li>
+          <li class="nav-item espaco " id="btn_navbarMa" onmouseout="normal()" onmousemove="moveMa()">
+            <a class="nav-link active text-primary-emphasis" href="mascote.html">Sobre </a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
+          <button class="btn btn-outline-light" type="submit">Pesquisar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<body>
+  <div class="container">
+    <div class="row centro">
+      <div class="col-7 sizeLogoLogin centro">
+        <img src="../imagens/logo_new2.png">
+      </div>
+    </div>
+    <form>
+      <div class="row centro">
+        <div class="col-7 textConsul">
+          <div class="row">
+            <div class="col">
+              <div class="mb-3">
+                <label for="email" class="form-label">E-mail</label>
+                <input type="email" class="form-control" required id="email">
+              </div>
+            </div>
+          </div>
+          <div class="row centro">
+            <div class="col">
+              <div class="mb-3">
+                <label for="senha" class="form-label">Senha</label>
+                <input type="password" class="form-control" required id="senha">
+              </div>
+            </div>
+          </div>
+          <div class="row row-form">
+            <div class="col row-form">
+              <button type="button" class="btn w-100 m-2 btn-outline-primary" onclick="login()">Login</button>
+            </div>
+            <div class="col row-form">
+              <a href="../HTML/cadastro.html"><button type="button"
+                  class="btn w-100 m-2 btn-outline-info">Cadastrar</button></a>
+            </div>
+          </div>
+    </form>
+  </div>
+  <div class="row">
+    <div class="col">
+
+    </div>
+    <div class="col">
+      <div class="col align-self-center " id="info"></div>
+    </div>
+    <div class="col">
+
+    </div>
+  </div>
+  </div>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="../js/login.js"></script>
+<script src="../js/index.js"></script>
+
+</html>
